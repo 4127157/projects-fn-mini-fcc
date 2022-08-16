@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+  display: flex;
+  background: no-repeat center url("./public/piano_background.jpeg");
+  background-size:cover;
+  margin: 0;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  padding:1px;
+  background:#FFC107;
+  border: 5px solid #757575;
+  border-top-width: 3px;
+  border-left-width: 3px;
+  border-right-color: #424242;
+  border-bottom-color: #424242;
+  box-shadow: inset 2px 2px 0 0 #9E9E9E, 
+              inset -2px -2px 0 0 #9E9E9E,
+              2px 2px 3px 1px #212121;
+}
+
+button {
+  height: 6em;
+  width: 7.5em;
+  border:none;
+  background:#FAFAFA;
+}
+
+button:hover {
+  box-shadow: inset 0 0 20px 0 #9E9E9E;
+}
+
+button:active{
+  opacity:0.6;
+}
+
+button:nth-of-type(odd){
+  background:#212121;
+  color:white;
+}
+
+button:nth-of-type(odd):hover{
+  box-shadow: inset 0 0 30px 0 black;
+}
+
+#control-area {
+  display:block;
+  margin-left: 2em;
+  
+}
+
+#display {
+  display: block;
+  height: 30px;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background: black;
+  color: rgb(255, 245, 157);
+  font-family: "VT323", monospace;
+  font-size: 1.75em;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 3px solid #757575;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-right-color: #424242;
+  border-bottom-color: #424242;
+  box-shadow: inset 2px 2px 0 0 #e0e0e0, 
+              inset -2px -2px 0 0 #e0e0e0,
+              1px 1px 2px 1px #212121;
+}
+
+#volume-control{
+  margin:auto;
+  display:block;
+}
+
+label {
+  display: none;
+}
+
+#volume {
+  margin:0;
+  margin-left:1px;
+  margin-top:20px;
+  width:212px;
+  background:none;
+}
+
+@media screen and (max-width:650px){
+  body{
+    flex-direction:column;
+  }
+  
+  #control-area{
+    margin:0;
+    margin-top: 30px;
+    
+  }
+}
+
+
+/*generated with Input range slider CSS style generator (version 20211225)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].styled-slider {
+  -webkit-appearance: none;
+}
+
+/*progress support*/
+input[type=range].styled-slider.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 1em + var(--ratio) * (100% - 1em));
+}
+
+input[type=range].styled-slider:focus {
+  outline: none;
+}
+
+/*webkit*/
+input[type=range].styled-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1em;
+  height: 2em;
+  border-radius: 0.2em;
+  background: linear-gradient(to right, #ededed 22%,#ffffff 39%,#f3f3f3 58%,#ededed 75%,#ffffff 100%);
+  border: none;
+  box-shadow: inset 0 0 4px #909090;
+  margin-top: calc(0.8em * 0.5 - 2em * 0.5);
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+  height: 0.8em;
+  border: none;
+  border-radius: 0.3em;
+  background: #FFFFFF;
+  box-shadow: inset 3px 0 7px #383636;
+}
+input[type=range].styled-slider::-webkit-slider-thumb:hover {
+  background: linear-gradient(to right, #ededed 22%,#ffffff 39%,#f3f3f3 58%,#ededed 75%,#ffffff 100%);
+}
+
+input[type=range].styled-slider:hover::-webkit-slider-runnable-track {
+  background: #e5e5e5;
+}
+
+input[type=range].styled-slider::-webkit-slider-thumb:active {
+  background: linear-gradient(to right, #ededed 22%,#ffffff 39%,#f3f3f3 58%,#ededed 75%,#ffffff 100%);
+}
+
+input[type=range].styled-slider:active::-webkit-slider-runnable-track {
+  background: #f5f5f5;
+}
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+  background: linear-gradient(#424242 15%,#EEEEEE, 45%, #212121 55%) 0/var(--sx) 100% no-repeat, #FFFFFF;
+}
+
+input[type=range].styled-slider.slider-progress:hover::-webkit-slider-runnable-track {
+  background: linear-gradient(#424242 15%,#DDDDDD, 45%, #212121 55%) 0/var(--sx) 100% no-repeat, #e5e5e5;
+}
+
+input[type=range].styled-slider.slider-progress:active::-webkit-slider-runnable-track {
+  background: linear-gradient(#424242 30%,#EEEEEE 52%, 55%, #212121 57%) 0/var(--sx) 100% no-repeat, #f5f5f5;
+}
+
+/*mozilla*/
+input[type=range].styled-slider::-moz-range-thumb {
+  width: 1em;
+  height: 2em;
+  border-radius: 0.2em;
+  background: linear-gradient(to right, #ededed 22%,#ffffff 39%,#f3f3f3 58%,#ededed 75%,#ffffff 100%);
+  border: none;
+  box-shadow: inset 0 0 4px #909090;
+}
+
+input[type=range].styled-slider::-moz-range-track {
+  height: 0.8em;
+  border: none;
+  border-radius: 0.3em;
+  background: #FFFFFF;
+  box-shadow: inset 3px 0 7px #383636;
+}
+
+input[type=range].styled-slider::-moz-range-thumb:hover {
+  background: linear-gradient(to right, #ededed 22%,#ffffff 39%,#f3f3f3 58%,#ededed 75%,#ffffff 100%);
+}
+
+input[type=range].styled-slider:hover::-moz-range-track {
+  background: #e5e5e5;
+}
+
+input[type=range].styled-slider::-moz-range-thumb:active {
+  background: linear-gradient(to right, #ededed 22%,#ffffff 39%,#f3f3f3 58%,#ededed 75%,#ffffff 100%);
+}
+
+input[type=range].styled-slider:active::-moz-range-track {
+  background: #f5f5f5;
+}
+
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+  background: linear-gradient(#424242 15%,#EEEEEE, 45%, #212121 55%) 0/var(--sx) 100% no-repeat, #FFFFFF;
+}
+
+input[type=range].styled-slider.slider-progress:hover::-moz-range-track {
+  background: linear-gradient(#424242 15%,#DDDDDD, 45%, #212121 55%) 0/var(--sx) 100% no-repeat, #e5e5e5;
+}
+
+input[type=range].styled-slider.slider-progress:active::-moz-range-track {
+  background: linear-gradient(#424242 30%,#EEEEEE 52%, 55%, #212121 57%) 0/var(--sx) 100% no-repeat, #f5f5f5;
+}
+
+/*ms*/
+input[type=range].styled-slider::-ms-fill-upper {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-fill-lower {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-thumb {
+  width: 1em;
+  height: 2em;
+  border-radius: 0.2em;
+  background: linear-gradient(to right, #ededed 22%,#ffffff 39%,#f3f3f3 58%,#ededed 75%,#ffffff 100%);
+  border: none;
+  box-shadow: inset 0 0 4px #909090;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+input[type=range].styled-slider::-ms-track {
+  height: 0.8em;
+  border-radius: 0.3em;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: inset 3px 0 7px #383636;
+  box-sizing: border-box;
+}
+
+input[type=range].styled-slider::-ms-thumb:hover {
+  background: linear-gradient(to right, #ededed 22%,#ffffff 39%,#f3f3f3 58%,#ededed 75%,#ffffff 100%);
+}
+
+input[type=range].styled-slider:hover::-ms-track {
+  background: #e5e5e5;
+}
+
+input[type=range].styled-slider::-ms-thumb:active {
+  background: linear-gradient(to right, #ededed 22%,#ffffff 39%,#f3f3f3 58%,#ededed 75%,#ffffff 100%);
+}
+
+input[type=range].styled-slider:active::-ms-track {
+  background: #f5f5f5;
+}
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+  height: 0.8em;
+  border-radius: 0.3em 0 0 0.3em;
+  margin: -undefined 0 -undefined -undefined;
+  background: linear-gradient(#424242 15%,#EEEEEE, 45%, #212121 55%);
+  border: none;
+  border-right-width: 0;
+}
+
+input[type=range].styled-slider.slider-progress:hover::-ms-fill-lower {
+  background: linear-gradient(#424242 15%,#DDDDDD, 45%, #212121 55%);
+}
+
+input[type=range].styled-slider.slider-progress:active::-ms-fill-lower {
+  background: linear-gradient(#424242 30%,#EEEEEE 52%, 55%, #212121 57%);
+}

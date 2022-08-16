@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- TODO : Fix Scrolling (possibly add CSS-ONLY smooth scroll-to -->
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nine Key Piano</title>
+  <meta name="description" content="Simple nine key piano type instrument that
+  can be played with 9 adjacent keys on the keyboard easily">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Nine Key Piano">
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="">
+  <!-- TO BE DECIDED ^ -->
+  <meta property="og:image" content=""> 
+  <!-- temporary image -->
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- yet to be created, use same as one created for site --> 
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- same issue with favicon --> 
+
+
+  <link rel="stylesheet" href="./css/drum_machine.css">
+
+
+  <noscript>Please enable javascript in order to experience the linked projects
+      better, sorry if you're inconvenienced but this is primarily a JS demo
+      thing.</noscript>
+  <!-- verify if screen readers can read this info here ^ (should always be at
+  the bottom) -->
+
+</head>
+<body>
+  <section id="drum-machine">
+    <button class="drum-pad" id="chord_a1">Q
+      <audio preload class="clip chord_a1" id="Q" src="./public/Q_sound.mp3">Your browser does not have support for the <code>&lt;audio&gt;</code> tag.</audio>
+    </button>
+
+    <button class="drum-pad" id="chord_d2">W
+      <audio preload class="clip chord_d2" id="W" src="./public/W_sound.mp3">Your browser does not have support for the <code>&lt;audio&gt;</code> tag.</audio>
+    </button>
+    <button class="drum-pad" id="chord_f_shrp_2">E
+      <audio preload class="clip chord_f_shrp_2" id="E" src="./public/E_sound.mp3">Your browser does not have support for the <code>&lt;audio&gt;</code> tag.</audio>
+    </button>
+    <button class="drum-pad" id="chord_a2">A
+      <audio preload class="clip chord_a2" id="A" src="./public/A_sound.mp3">Your browser does not have support for the <code>&lt;audio&gt;</code> tag.</audio>
+    </button>
+    <button class="drum-pad" id="chord_d3">S
+      <audio preload class="clip chord_d3" id="S" src="./public/S_sound.mp3">Your browser does not have support for the <code>&lt;audio&gt;</code> tag.</audio>
+    </button>
+    <button class="drum-pad" id="chord_f_shrp_3">D
+      <audio preload class="clip chord_f_shrp_3" id="D" src="./public/D_sound.mp3">Your browser does not have support for the <code>&lt;audio&gt;</code> tag.</audio>
+    </button>
+    <button class="drum-pad" id="chord_a3">Z
+      <audio preload class="clip chord_a3" id="Z" src="./public/Z_sound.mp3">Your browser does not have support for the <code>&lt;audio&gt;</code> tag.</audio>
+    </button>
+    <button class="drum-pad" id="chord_d4">X
+      <audio preload class="clip chord_d4" id="X" src="./public/X_sound.mp3">Your browser does not have support for the <code>&lt;audio&gt;</code> tag.</audio>
+    </button>
+    <button class="drum-pad" id="chord_f_shrp_4">C
+      <audio preload class="clip chord_f_shrp_4" id="C" src="./public/C_sound.mp3">Your browser does not have support for the <code>&lt;audio&gt;</code> tag.</audio>
+    </button>
+  </section>
+  <div id="control-area">
+    <output for="Q W E A S D Z X C" id="display"></output>
+    <div id="volume-control">
+      <label for="volume">Volume</label>
+      <input class='styled-slider slider-progress' type="range" id="volume" name="volume" min="0" max="100" step="1" value="100">
+    </div>
+  </div>
+
+  <script src="./js/drum_machine.js"></script>
+
+</body>
+</html>
+

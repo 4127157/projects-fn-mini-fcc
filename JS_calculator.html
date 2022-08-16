@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- TODO : Fix Scrolling (possibly add CSS-ONLY smooth scroll-to -->
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vanilla JS Calculator</title>
+  <meta name="description" content="A calculator written in pure JS (vanilla),
+  simple as that">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Vanilla JS Calculator">
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="">
+  <!-- TO BE DECIDED ^ -->
+  <meta property="og:image" content=""> 
+  <!-- temporary image -->
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- yet to be created, use same as one created for site --> 
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- same issue with favicon --> 
+
+
+  <link rel="stylesheet" href="./css/JS_calculator.css">
+
+
+  <noscript>Please enable javascript in order to experience the linked projects
+      better, sorry if you're inconvenienced but this is primarily a JS demo
+      thing.</noscript>
+  <!-- verify if screen readers can read this info here ^ (should always be at
+  the bottom) -->
+
+</head>
+<body>
+	<section>
+		<output id="display_register">
+		</output>
+		<output id="display">0
+		</output>
+	</section>
+	<section>
+		<form id="calc_input">
+			
+			<input type="button" value="AC" id="clear">
+			
+			<input type="button" value="=" id="equals">
+			<input type="button" class="registerable" value="1" id="one">
+			<input type="button" class="registerable" value="2" id="two">
+			<input type="button" class="registerable" value="3" id="three">
+			<input type="button" class="registerable operator" value="/" id="divide">
+			<input type="button" class="registerable" value="4" id="four">
+			<input type="button" class="registerable" value="5" id="five">
+			<input type="button" class="registerable" value="6" id="six">
+			<input type="button" class="registerable operator" value="x" id="multiply">
+			<input type="button" class="registerable" value="7" id="seven">
+			<input type="button" class="registerable" value="8" id="eight">
+			<input type="button" class="registerable" value="9" id="nine">
+			<input type="button" class="registerable operator" value="+" id="add">
+			<input type="button" class="registerable" value="0" id="zero">
+			<input type="button" value="." id="decimal">
+			<input type="button" class="registerable operator" value="-" id="subtract">
+		</form>
+	</section>
+    <script src="./js/JS_calculator.js"></script>
+</body>
+</html>
+
