@@ -1,0 +1,160 @@
+<!doctype html>
+<!-- TODO : Fix Scrolling (possibly add CSS-ONLY smooth scroll-to -->
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>La Chancla</title>
+  <meta name="description" content="The World's Most Versatile Weapon">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="La Chancla">
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="">
+  <!-- TO BE DECIDED ^ -->
+  <meta property="og:image" content=""> 
+  <!-- temporary image -->
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- yet to be created, use same as one created for site --> 
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- same issue with favicon --> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/landing_page.css">
+
+  <noscript>Please enable javascript in order to experience the linked projects
+      better, sorry if you're inconvenienced but this is primarily a JS demo
+      thing.</noscript>
+  <!-- verify if screen readers can read this info here ^ (should always be at
+  the bottom) -->
+
+</head>
+<body>
+  <div class="page-container">
+  <header id="header">
+    <div class="logo">
+      <a href='#hero'><img id="header-img" src="./public/la_chanclata.png" alt="la chanclata logo"/></a>
+      <div id="logo-text"><a href="#hero" id="logo-text-link">La Chancla</a></div>
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <a class='nav-link' href='#features'>Features</a>
+        </li>
+        <li>
+          <a class='nav-link' href='#how-it-works'>How It Works</a>
+        </li>
+        <li>
+          <a class='nav-link' href='#pricing'>Pricing</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <div class='main'>
+      <section id='hero'>
+        <h1>The World's Most Versatile Weapon</h1>
+        <h4>(Second only to the Swiss knife)</h4>
+      </section>
+      <section id='features'>
+        <div class='grid'>
+          <div class='icon'>
+            <img class='icon-img' src='./public/la_chancla_grid_icon_1.png' alt='paper plane image icon'/>
+          </div>
+          <div class='description'>
+            <h2>Aerodynamic</h2>
+            <p>Multi-directional launch capability insures hitting the target no matter the launch position. Grooves under the sole direct the air to keep it afloat while maintaining perfect stability.</p>
+          </div>
+        </div>
+        <div class='grid'>
+          <div class='icon'>
+            <img class='icon-img' src='./public/la_chancla_grid_icon_2.png' alt='feather image icon'/>
+          </div>
+          <div class='description'>
+            <h2>Lightweight</h2>
+            <p>Fully polymer built to provide lift and velocity. Higher velocity ensures more impact. The enemy would never expect it.</p>
+          </div>
+        </div>
+        <div class='grid'>
+          <div class='icon'>
+            <img class='icon-img' src='./public/la_chancla_grid_icon_3.png' alt='metal spring image icon'/>
+          </div>
+          <div class='description'>
+            <h2>Flexible</h2>
+            <p>World Class Polymer insures maximum flexibility increasing durability and reusability. Design balanced to ensure highest energy transfer on impact.</p>
+          </div>
+        </div>
+      </section>
+      <section id='how-it-works'>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/PH5rkSG_Hqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      <section id='pricing'>
+        <div class='product' id='classic'>
+          <div class='forehead'>Classic Chancla</div>
+          <h2>$10</h2>
+          <ol>
+            <li>High Quality</li>
+            <li>Reliable Design</li>
+            <li>All Weather Performance</li>
+            <li>Adaptable Grip</li>
+          </ol>
+          <button class='btn'>Select</btn>
+        </div>
+        <div class='product' id='comfy'>
+          <div class='forehead'>Comfy Chancla</div>
+          <h2>$15</h2>
+          <ol>
+            <li>High Quality</li>
+            <li>Modern Design</li>
+            <li>Thick Comfortable Sole</li>
+            <li>Snug Fit</li>
+          </ol>
+          <button class='btn'>Select</btn>
+        </div>
+        <div class='product' id='leather'>
+          <div class='forehead'>Leather Chancla</div>
+          <h2>$30</h2>
+          <ol>
+            <li>Premium Quality</li>
+            <li>Fashionable Look</li>
+            <li>Comfortable Soft Sole</li>
+            <li>Adjustable Grip</li>
+          </ol>
+          <button class='btn'>Select</btn>
+        </div>
+      </section>
+      <section id='get-updates'>
+        <h2>Get the latest tips & tricks!</h2>
+        <form id='form' action="https://www.freecodecamp.com/email-submit">
+          <input
+                 name='email'
+                 id='email'
+                 type='email'
+                 placeholder='Enter your email address'
+                 required />
+          <input id='submit' type='submit' value="Let's Go" class='btn'/>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <ul>
+        <li><a href='#'>Privacy</a></li>
+        <li><a href='#'>Terms</a></li>
+        <li><a href='#'>Contact</a></li>
+      </ul>
+      <span id='footer-copy'>Copyright 2021, La Chancla</span>
+    </footer>
+  </div>
+</body>
+</html>
+

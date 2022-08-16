@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Online Chatter Survey</title>
+  <meta name="description" content="Chatter Survey Example Page with no JS">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Online Chatter Survey">
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="">
+  <!-- TO BE DECIDED ^ -->
+  <meta property="og:image" content=""> 
+  <!-- temporary image -->
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- yet to be created, use same as one created for site --> 
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- same issue with favicon --> 
+
+
+  <link rel="stylesheet" href="css/survey_page.css">
+
+  <noscript>Please enable javascript in order to experience the linked projects
+      better, sorry if you're inconvenienced but this is primarily a JS demo
+      thing.</noscript>
+  <!-- verify if screen readers can read this info here ^ (should always be at
+  the bottom) -->
+
+</head>
+<body>
+  <div id="main">
+  <header class="header">
+    <h1 id="title">Online Chatter Survey</h1>
+    <p id="description">Please fill the form below, thank you for taking your time!</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label 
+               for="name" 
+               id="name-label">Name<span 
+                                     class="reqd">*
+          </span>
+        </label>
+        <input 
+               type="text" 
+               name="name" 
+               id="name" 
+               class="form-fields"
+               placeholder="Your name here"
+               required/>
+      </div>
+      <div class="form-group">
+        <label 
+               for="email"  
+               id="email-label">Email<span 
+                                 class="reqd">*</span>                         
+        </label>
+        <input 
+               type="email" 
+               name="email" 
+               id="email" 
+               class="form-fields" 
+               placeholder="Your email here" 
+               required/>
+      </div>
+      <div class="form-group">
+        <label 
+               for="age" 
+               id="number-label">Age</label>
+        <input 
+               type="number" 
+               name="age" 
+               id="number" 
+               min="13" 
+               max="99" 
+               class="form-fields" 
+               placeholder="Age"/>
+      </div>
+      
+      <div class="form-group">
+        <p>What is your most preferred chatting software?</p>
+        <select 
+                id="dropdown" 
+                name="software" 
+                class="form-fields" 
+                required>
+          <option disabled selected value>Select preferred software</option>
+          <option value="discord">Discord</option>
+          <option value="skype">Skype</option>
+          <option value="teamspeak">TeamSpeak</option>
+          <option value="twitter-DMs">Twitter DMs</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Approximately how much time do you spend chatting?<span id="cluetext"> (in Hrs)</span></p>
+        <label>
+          <input type="radio" value="0-0.5" name="time-spent" class="radio-input"/>0 - 0.5</label>
+        <label>
+          <input type="radio" value="1-3" name="time-spent" class="radio-input"/>1 - 3</label>
+        <label>
+          <input type="radio" value="3-5" name="time-spent" class="radio-input"/>3 - 5</label>
+        <label>
+          <input type="radio" value="5-7" name="time-spent" class="radio-input"/>5 - 7</label>
+        <label>
+          <input type="radio" value="7-9" name="time-spent" class="radio-input"/>7 - 9</label>
+        <label>
+          <input type="radio" value="9+" name="time-spent" class="radio-input"/>9+</label>
+      </div>
+      <div class="form-group">
+        <p>What are topics you like to chat about? <span id="cluetext">(Check all that apply)</span></p>
+        <label><input name="topics" type="checkbox" value='gaming' class='input-checkbox'/>Gaming</label>
+        <label><input name="topics" type="checkbox" value='art' class='input-checkbox'/>Art</label>
+        <label><input name="topics" type="checkbox" value='music' class='input-checkbox'/>Music</label>
+        <label><input name="topics" type="checkbox" value='politics' class='input-checkbox'/>Politics</label>
+        <label><input name="topics" type="checkbox" value='food' class='input-checkbox'/>Food</label>
+        <label><input name="topics" type="checkbox" value='Other' class='input-checkbox'/>Other</label>
+      </div>
+      <div class="form-group">
+        <p>Are there any other comments or suggestions you'd like to make?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </div> 
+</body>
+</html>
+
