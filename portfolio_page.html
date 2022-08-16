@@ -1,0 +1,172 @@
+<!doctype html>
+<!-- TODO : Fix Scrolling (possibly add CSS-ONLY smooth scroll-to -->
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <meta name="description" content="Aryansh Malviya's Portfolio for an example
+  project not intended as real.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Portfolio (Example Project)">
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="">
+  <!-- TO BE DECIDED ^ -->
+  <meta property="og:image" content=""> 
+  <!-- temporary image -->
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- yet to be created, use same as one created for site --> 
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- same issue with favicon --> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/portfolio_page.css">
+
+  <noscript>Please enable javascript in order to experience the linked projects
+      better, sorry if you're inconvenienced but this is primarily a JS demo
+      thing.</noscript>
+  <!-- verify if screen readers can read this info here ^ (should always be at
+  the bottom) -->
+
+</head>
+<body>
+  <nav id='navbar'>
+    <div id='nav-title'><a href='#home' id-'title-home'>ARYANSH CODES</a></div>
+    <ul>
+      <li><a href='#welcome-section'>ABOUT</a></li>
+      <li><a href='#projects'>PROJECTS</a></li>
+      <li><a href='#blog'>BLOG</a></li>
+      <li><a href='#contact'>CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <main id='main-page'>
+    <section id='welcome-section'>
+      <h1>Hi, I'm Aryansh</h1>
+      <h3>I am a web developer</h3>
+    </section>
+    <section id='projects'>
+      <header>Projects</header>
+      <div id='projects-grid-container'>
+        <a href='./landing_page.html' target='_blank'>
+          <div class='project-tile'>
+            <img src='https://i.imgur.com/hXjSF9j.png' class='proj-item-img' />
+            <div class='item-name'>
+              <p>Landing Page</p>
+            </div>
+          </div>
+        </a>
+        <a href='./survey_page.html' target='_blank'>
+          <div class='project-tile'>
+            <img src='https://i.imgur.com/BSJCwAb.png' class='proj-item-img' />
+            <div class='item-name'>
+              <p>Survey Form</p>
+            </div>
+          </div>
+        </a>
+        <a href='./documentation_page.html' target='_blank'>
+          <div class='project-tile'>
+            <img src='https://i.imgur.com/ZuvQvJ6.png' class='proj-item-img' />
+            <div class='item-name'>
+              <p>Technical Documentation</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div id='show-all-container'>
+        <a href='#' id='show-all-anchor'>
+          <div id='show-all'>Show all &gt</div>
+        </a></div>
+      
+    </section>
+
+    <section id='blog'>
+      <header>Blog</header>
+      <div id='blog-grid-container'>
+        <a href='#'>
+          <div class='blog-item'>
+            <img src='https://i.imgur.com/0dqdq3m.jpeg' class='blog-item-img' />
+            <div class='blog-item-text'>
+              <h4>a winding week with vanilla JS</h4>
+              <p>There are quite a few issues with using vanilla JS as your main development mode and here is why.</p>
+            </div>
+          </div>
+        </a>
+        <a href='#'>
+          <div class='blog-item'>
+            <img src='https://i.imgur.com/0dqdq3m.jpeg' class='blog-item-img' />
+            <div class='blog-item-text'>
+              <h4>a winding week with vanilla JS</h4>
+              <p>There are quite a few issues with using vanilla JS as your main development mode and here is why.</p>
+            </div>
+          </div>
+        </a>
+        <a href='#'>
+          <div class='blog-item'>
+            <img src='https://i.imgur.com/0dqdq3m.jpeg' class='blog-item-img' />
+            <div class='blog-item-text'>
+              <h4>a winding week with vanilla JS</h4>
+              <p>There are quite a few issues with using vanilla JS as your main development mode and here is why.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div id='show-all-container'>
+        <a href='#' id='show-all-anchor'>
+          <div id='show-all'>See More Posts &gt</div>
+        </a></div>
+      
+    </section>
+    <section id='contact'>
+      <header>Contact</header>
+      <div id='form-container'>
+        <form>
+          <div id='name-email'>
+            <div id='name-form'>
+              <label for='name'>Name:</label>
+              <input type='text' placeholder="Enter your name" id='name' required />
+            </div>
+            <div id='email-form'>
+              <label for='email'>Email:</label>
+              <input type='email' id='email' placeholder="Enter your email ID" required />
+            </div>
+          </div>
+          <div id='form-textarea'>
+            <p>Message:</p>
+            <textarea placeholder='Enter your message here...'></textarea>
+            <input type='submit' />
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <ol>
+      <li><a href='#'>Twitter</a></li>
+      <li><a id='profile-link' href='https://github.com/4127157' target='_blank'>GitHub</a></li>
+      <li><a href='#'>LinkedIn</a></li>
+    </ol>
+    <ol>
+      <li><a href='#'>Privacy</a></li>
+      <li><a href='#'>Cookies</a></li>
+      <li><a href='#'>Issues?</a></li>
+    </ol>
+
+    <p>This is not a real portfolio, for a FreeCodeCamp project only.</p>
+  </footer>
+</body>
+</html>
+

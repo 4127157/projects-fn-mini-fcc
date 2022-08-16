@@ -1,0 +1,349 @@
+html {
+  color:white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 10px;
+}
+
+html a{
+  color:white;
+}
+
+body {
+  background: #212121;
+  margin: 0;
+}
+
+p{
+  font-size:1.6rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+h3 {
+  font-size:2.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 75px;
+  top: 0;
+  background: #3949ab;
+}
+
+#nav-title {
+  display: flex;
+  width: 35vw;
+  align-items: center;
+  padding-left: 20px;
+}
+
+
+
+#navbar ul {
+  display: flex;
+  width: 65vw;
+  justify-content: flex-end;
+  margin: 0;
+  align-items: center;
+}
+
+@media (max-width:600px){
+  #navbar ul{
+    display:none;
+  }
+  
+}
+
+#navbar ul li {
+  padding-right: 20px;
+}
+
+#navbar a {
+  font-weight:100;
+  font-size: 1.8rem;
+}
+
+#nav-title a{
+  font-weight:800;
+}
+
+#main-page {
+  margin: 0;
+  margin-top: 75px;
+}
+
+#welcome-section {
+  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section header {
+  text-align: center;
+  padding: 25px 0;
+  font-size:3rem;
+  text-transform:uppercase;
+  text-decoration:underline;
+}
+
+#projects {
+  background:#FDD835;
+}
+
+#projects header{
+  color:#212121;
+}
+
+#show-all{
+  display:inline-block;
+  background:#3949AB;
+  padding:15px;
+  width:120px;
+  margin:50px auto;
+  
+}
+
+@media (max-width:460px){
+  #show-all{
+    width:100%;
+    padding:20px;
+    padding-left:0;
+  }
+}
+
+
+#show-all-anchor{
+  
+  text-align:center;
+  font-size:1.6rem;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+#show-all-container{
+  display:block;
+  text-align:center;
+}
+
+
+#projects-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  width:100%;
+  max-width: 1280px;
+  margin:35px auto;
+}
+
+.project-tile {
+  cursor: pointer;
+  margin: auto;
+  width: 350px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.proj-item-img {
+  display: block;
+  width: 100%;
+  height:200px;
+  border-radius:5px 5px 0 0;
+}
+
+.item-name {
+  margin: 0;
+  padding: 15px 20px;
+  background: #414141;
+  text-align: center;
+/*   border: 5px solid #3F51B5; */
+  border-top:none;
+  border-radius: 0 0 5px 5px;
+}
+
+.item-name p {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+#blog{
+  background:#FDD835;
+}
+
+#blog header{
+  color:#212121;
+}
+
+#blog-grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap:20px;
+  max-width:100%;
+  margin:35px 0;
+}
+
+.blog-item{
+  width:400px;
+  margin:auto;
+  max-width:100%;
+  
+}
+
+.blog-item-text{
+  padding:10px 5px;
+  background:#313131;
+}
+
+.blog-item-text h4,p{
+  margin:0;
+}
+
+.blog-item-text h4{
+  text-transform:capitalize;
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.blog-item-text p{
+  margin-left:5px;
+}
+
+.blog-item-img{
+  display:block;
+  width:100%;
+}
+
+#contact{
+/*   background:#FDD835; */
+  padding-bottom:50px;
+}
+
+#contact header{
+  color:#fff;
+}
+
+#contact label, #contact p{
+  color:#fff;
+}
+
+#form-container{
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+@media (max-width:830px){
+  #form-container{
+    width:100%;
+    
+  }
+  
+  #form-container form{
+    padding:0 10px;
+  }
+}
+
+#name-email{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  margin-bottom:0;
+}
+
+#name-form, #email-form{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:15px;
+}
+
+#email,#name{
+  height:30px;
+  border-radius:5px;
+  border:none;
+}
+
+#form-container form{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+
+
+#form-textarea{
+  width:100%;
+  
+}
+
+label{
+  font-size:1.6rem;
+  margin-bottom:2px;
+}
+
+#form-textarea textarea{
+  width:100%;
+  min-height:80px;
+  resize:vertical;
+  box-sizing:border-box;
+  border-radius:5px;
+  border:none;
+}
+
+#form-textarea input{
+  width:100%;
+  padding:10px;
+  margin:0;
+  overflow:hidden;
+  border-radius:5px;
+  margin-top:10px;
+  background:#3949AB;
+  color:white;
+  text-transform:uppercase;
+  font-size:1.6rem;
+  font-weight:600;
+  border:none;
+}
+
+footer {
+/*   margin-top:50px; */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background:#424242;
+}
+
+footer ol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ol li {
+  padding-right: 20px;
+}
+
+footer a{
+  font-size:1.3rem;
+}
+
+
