@@ -65,7 +65,7 @@ Reject non-cellular | User Interfaces! | Embrace celled browsing.
 3. **WOW! _EXCITING!_** _I LOOOOOOOVE NUMBERED LISTS!_
 
 And here's my favourite kind of dog to show that it can handle images too:
-![Golden Retriever with its tongue out](https://brocku.ca/brock-news/wp-content/uploads/2013/11/golden-retriever.jpeg)`;
+![Golden Retriever with its tongue out](./public/golden-retriever.jpeg)`;
 
 window.addEventListener("DOMContentLoaded", (event) => {
   
