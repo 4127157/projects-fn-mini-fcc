@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- TODO : Fix Scrolling (possibly add CSS-ONLY smooth scroll-to -->
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple Markdown Project</title>
+  <meta name="description" content="Simple markdown previewer written with
+  HTML/CSS/JS without any 'framework'!">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Simple Markdown Project">
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="">
+  <!-- TO BE DECIDED ^ -->
+  <meta property="og:image" content=""> 
+  <!-- temporary image -->
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- yet to be created, use same as one created for site --> 
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- same issue with favicon --> 
+
+
+  <link rel="stylesheet" href="./css/markdown_previewer.css">
+
+  <noscript>Please enable javascript in order to experience the linked projects
+      better, sorry if you're inconvenienced but this is primarily a JS demo
+      thing.</noscript>
+  <!-- verify if screen readers can read this info here ^ (should always be at
+  the bottom) -->
+
+</head>
+<body>
+  <section id="editor_panel">
+    <nav class="titlebar" id="titlebar_editor">
+      <label for="editor">Editor</label>
+      <button id="editor_expand">Expand</button>
+    </nav>
+    <textarea id="editor" name="editor"></textarea>
+  </section>
+  <section id="preview_panel">
+    <nav class="titlebar" id="titlebar_preview">
+      <label for="preview">Preview</label>
+      <button id="preview_expand">Expand</button>
+    </nav>
+    <output name='prevew' id="preview">
+    </output>
+  </section>
+</body>
+</html>
+
