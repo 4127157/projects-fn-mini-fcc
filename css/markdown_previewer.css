@@ -1,0 +1,85 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: rgb(224, 224, 224);
+}
+
+section {
+  display: flex;
+  flex-basis: 50%; /*needs to be 100% on button expand*/
+  flex-direction: column;
+  border: 1px black solid;
+  background: white;
+  /*   overflow-y:auto; */
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  border-bottom: 1px black solid;
+  padding: 0.7em;
+  justify-content: space-between;
+}
+
+button {
+  background: rgb(245, 245, 245);
+}
+
+/*have to set the margins of both panels to 0.5em on expand button click*/
+
+#editor_panel {
+  margin: 0.5em 0.25em 0.5em 0.5em;
+}
+
+#preview_panel {
+  margin: 0.5em 0.5em 0.5em 0.25em;
+}
+
+output {
+  overflow-y: auto;
+  padding: 0.6em;
+}
+
+textarea {
+  /*   object-fit:contain; */
+  padding: 0.6em;
+  border: none;
+  overflow-y: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  /*   border-radius:0px;
+  border:1px solid blue; */
+  box-shadow: inset 0 0 2px 2px lightblue;
+  /*   box-shadow:1px 1px 1px 1px #000000 inset; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(95, 95, 95);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+output img {
+  max-width: 300px;
+}
