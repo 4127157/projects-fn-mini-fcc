@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align:center;
+}
+
+#visHolder {
+    display:flex;
+    margin:auto;
+}
+
+svg {
+    max-height:85vh;
+    width:auto;
+    margin:auto;
+}
+
+#tooltip {
+    position: absolute;
+    background: #FFF9c4;
+    pointer-events: none;
+    padding: 6px 12px;
+}
